@@ -12,6 +12,9 @@ struct BackpressureApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .onAppear {
+                    run()
+                }
         }
     }
 }
